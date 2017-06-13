@@ -9,9 +9,14 @@ app.config(function($routeProvider) {
             controller: "partieController"
         })
 
-        .when("/score", {
-            templateUrl: "score.html",
-            controller: "scoreController"
+        .when("/tetrimino", {
+            templateUrl: "tetrimino.html",
+            controller: "tetriminoController"
         })
-
+        
+        .when("/account", {
+            templateUrl: "account.html",
+            controller: "accountController"
+        })
+        
 });
