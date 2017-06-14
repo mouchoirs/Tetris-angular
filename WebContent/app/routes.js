@@ -22,12 +22,11 @@ app.config(function($routeProvider) {
          templateUrl: "./app/components/account/account.html",
          controller: "accountController"
 		})
-<<<<<<< Updated upstream
-=======
+
 		.when("/score", {
          templateUrl: "./app/components/score/score.html",
          controller: "scoreController"
 		})
->>>>>>> Stashed changes
+
 		
 }); 

@@ -1,1 +1,26 @@
-<h1>Scores</h1>
+<table class="highlight" >
+        <thead>
+          <tr>
+              <th>Id Partie</th>
+              <th>Joueur</th>  
+              <th>Score</th>
+              <th>Date</th>
+              
+          </tr>
+        </thead>
+
+		<tbody >
+          <tr ng-repeat="score in scores |  orderBy: '-points'">
+            <td>{{score.id}}</td>
+            <td>{{score.joueur.nom}}</td>
+            <td>{{score.points}}</td>
+            <td>{{score.date | date:'dd/MM/yyyy' }}</td>
+            
+          </tr>
+		</tbody>
+      </table>
+            
+            
+</table>
+
+
