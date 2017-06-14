@@ -7,3 +7,16 @@ app.config(function(tetrisProvider){
 	tetrisProvider.setHauteur(20);
 	tetrisProvider.setSizeOfTetriminos(25);
 })
+
+
+app.factory('userFactory', function(){
+	var user;
+	return{
+		setUser:function(_user){
+			user=_user;
+		},
+		getUser:function(){
+			return user;
+		}
+	}
+})

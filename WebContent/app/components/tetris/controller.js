@@ -107,6 +107,21 @@ app.controller("tetrisController", function($scope, Page, tetris, tetrisGhost, t
 
 
 
+
+
+
+
+	/*
+	 * Interception d'un Tetrimino placé
+	 */
+	angular.element(tetris).on('gameOver', function() {
+		var newScore = tetrisScore.points
+		alert("GAME OVEEEEEEER LOSEEEER !!! " );
+		window.location.reload();
+	});
+
+
+
 	/*
 	 * Interception d'une (ou plusieurs) ligne(s) complétée(s)
 	 */

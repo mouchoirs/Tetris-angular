@@ -317,6 +317,7 @@ app.provider("tetris", function() {
 						else {
 							if (i == 0) {
 								isGameOver = true;
+					
 							}
 						}
 					}
@@ -326,6 +327,7 @@ app.provider("tetris", function() {
 				if (!isGameOver) {
 					angular.element(this).trigger('tetriminoPut', [ myBlocPositions ]);
 					this.checkCompletedRows();
+					
 				}
 
 				else {
