@@ -28,5 +28,10 @@ app.config(function($routeProvider) {
          controller: "scoreController"
 		})
 
+		.when("/partie/tetris", {
+	         templateUrl: "./app/components/tetris/tetris.html",
+	         controller: "tetrisController"
+			})
+
 		
 }); 

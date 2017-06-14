@@ -2,7 +2,7 @@ var app = angular.module("tpAngular");
 
 
 app.factory("PartieResource", function(API_URL, $resource) {
-    return $resource(API_URL + '/score', null, {
+    return $resource(API_URL + '/partie', null, {
         'afficher': { method: 'GET' }
     });
 });
