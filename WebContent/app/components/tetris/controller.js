@@ -1,4 +1,4 @@
-var app = angular.module("tetris");
+var app = angular.module("tpAngular");
 
 
 app.controller("tetrisController", function($scope, Page, tetris, tetrisGhost, tetrisScore) {

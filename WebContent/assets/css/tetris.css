@@ -6,7 +6,11 @@
 	border: solid 1px black;
 }
 
-
+#btnstart{
+	margin:50px;
+	width:200px;
+	height:100px;
+}
 
 
 .board {

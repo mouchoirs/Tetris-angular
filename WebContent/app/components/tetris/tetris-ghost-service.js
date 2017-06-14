@@ -1,4 +1,4 @@
-var app = angular.module("tetris");
+var app = angular.module("tpAngular");
 
 
 app.service("tetrisGhost", function(tetris) {

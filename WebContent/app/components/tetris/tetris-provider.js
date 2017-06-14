@@ -1,4 +1,13 @@
-var app = angular.module("tetris");
+var app = angular.module("tpAngular");
+
+
+/*
+ * Crée un factory permettant de récupérer l'URL
+ */
+app.factory("tetriminoResource", function(API_URL, $resource) {
+    return $resource(API_URL + '/tetrimino', null, {
+    });
+});
 
 
 
@@ -21,6 +30,8 @@ app.provider("tetris", function() {
 	};
 
 
+	
+	
 
 	function Tetris(tetriminoResource) {
 		this.tetriminos = tetriminoResource.query();
@@ -97,10 +108,10 @@ app.provider("tetris", function() {
 				that.tetrimino.append(myBloc);
 			});
 		}
+		
+		
 
-
-
-
+	
 
 		/*
 		 * Se déplacer à gauche
